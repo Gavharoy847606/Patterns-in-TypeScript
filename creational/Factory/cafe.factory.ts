@@ -1,50 +1,50 @@
 
-interface Drink {
-  prepare(): void;
-}
+// interface Drink {
+//   prepare(): void;
+// }
 
-class Espressoo implements Drink {
-  prepare() {
-    console.log("Espresso tayyorlandi");
-  }
-}
+// class Espressoo implements Drink {
+//   prepare() {
+//     console.log("Espresso tayyorlandi");
+//   }
+// }
 
-class GreeenTea implements Drink {
-  prepare() {
-    console.log("Yashil choy damlandi");
-  }
-}
+// class GreeenTea implements Drink {
+//   prepare() {
+//     console.log("Yashil choy damlandi");
+//   }
+// }
 
-interface DrinkFactory {
-  createDrink(): Drink;
-}
+// interface DrinkFactory {
+//   createDrink(): Drink;
+// }
 
-class EspressoFactory implements DrinkFactory {
-  createDrink(): Drink {
-    return new Espresso();
-  }
-}
+// class EspressoFactory implements DrinkFactory {
+//   createDrink(): Drink {
+//     return new Espresso();
+//   }
+// }
 
-class GreenTeaFactory implements DrinkFactory {
-  createDrink(): Drink {
-    return new GreenTea();
-  }
-}
+// class GreenTeaFactory implements DrinkFactory {
+//   createDrink(): Drink {
+//     return new GreenTea();
+//   }
+// }
 
-type DrinkType = "espresso" | "green-tea";
+// type DrinkType = "espresso" | "green-tea";
 
-function getDrinkFactory(type: DrinkType): DrinkFactory {
-  switch (type) {
-    case "espresso":
-      return new EspressoFactory();
-    case "green-tea":
-      return new GreenTeaFactory();
-  }
-}
+// function getDrinkFactory(type: DrinkType): DrinkFactory {
+//   switch (type) {
+//     case "espresso":
+//       return new EspressoFactory();
+//     case "green-tea":
+//       return new GreenTeaFactory();
+//   }
+// }
 
-const factory = getDrinkFactory("green-tea");
-const drink = factory.createDrink();
-drink.prepare();
+// const factory = getDrinkFactory("green-tea");
+// const drink = factory.createDrink();
+// drink.prepare();
 
 
 /**Factory va Abstract Factory’ni yonma-yon ko’ring
