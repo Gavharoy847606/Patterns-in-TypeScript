@@ -1,0 +1,1 @@
+// design patternnig composite orqali login register avtomation logika yoziladi.
