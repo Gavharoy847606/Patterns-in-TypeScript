@@ -6,21 +6,21 @@ interface NotificationService {
 
 class SmsNotificationService implements NotificationService {
   send(recipient: string, message: string): void {
-    console.log(`📱 SMS → ${recipient}: ${message}`);
+    console.log(`SMS → ${recipient}: ${message}`);
   }
 }
 
 class TelegramClient {
   sendTelegramMessage(chatId: string, text: string): void {
-    console.log(`✈️ Telegram → chat ${chatId}: ${text}`);
+    console.log(`Telegram → chat ${chatId}: ${text}`);
   }
 }
 
 class EmailClient {
   sendEmail(emailAddress: string, subject: string, body: string): void {
-    console.log(`📧 Email → ${emailAddress}`);
-    console.log(`   Mavzu: ${subject}`);
-    console.log(`   Matn:  ${body}`);
+    console.log(`Email → ${emailAddress}`);
+    console.log(`Mavzu: ${subject}`);
+    console.log(`Matn:  ${body}`);
   }
 }
 

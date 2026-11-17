@@ -8,7 +8,7 @@ class File implements FileSystem {
   constructor(private name: string) {}
 
   show(indent = ""): void {
-    console.log(`${indent}📄 ${this.name}`);
+    console.log(`${indent} ${this.name}`);
   }
 }
 
@@ -27,7 +27,7 @@ class Folder implements FileSystem {
   }
 
   show(indent = ""): void {
-    console.log(`${indent}📁 ${this.name}`);
+    console.log(`${indent} ${this.name}`);
     this.children.forEach((child) => child.show(indent + "    "));
   }
 }
